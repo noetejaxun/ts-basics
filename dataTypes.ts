@@ -1,4 +1,8 @@
-// Tupla
-let tupla : [number, string];
-tupla = [1, "Texto"];
-// tupla = ["Texto", 1]; // Error
+// Enum
+enum Color {
+    Azul,
+    Rojo,
+    Amarillo
+}
+
+let azul = Color.Azul;
