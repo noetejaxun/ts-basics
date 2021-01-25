@@ -1,4 +1,4 @@
-// Desconocido (Unknown)
-let noEstoySeguroDelValor : unknown = 4;
-noEstoySeguroDelValor = "Era string";
-noEstoySeguroDelValor = true; // Era booleano
+// Any
+let looselyTyped: any = {};
+looselyTyped.name;
+looselyTyped.user.name;
