@@ -4,11 +4,11 @@ let nombres : Array<string> = [
     "Daniel",
     "Luis"
 ];
-
-// Ciclo While
+nombres = [];
+// Ciclo do - while
 let i : number = 0;
 
-while (i < nombres.length) {
+do {
     console.log(nombres[i]);
     i++;
-}
+} while (i < nombres.length);
