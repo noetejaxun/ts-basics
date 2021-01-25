@@ -1,8 +1,4 @@
-// Enum
-enum Color {
-    Azul,
-    Rojo,
-    Amarillo
-}
-
-let azul = Color.Azul;
+// Desconocido (Unknown)
+let noEstoySeguroDelValor : unknown = 4;
+noEstoySeguroDelValor = "Era string";
+noEstoySeguroDelValor = true; // Era booleano
