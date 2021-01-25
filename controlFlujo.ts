@@ -1,42 +1,30 @@
-// If (Expresión condicional)
-
 /*
-if (condición) {
-    declaración 1;
-} else {
-    declaración 2;
+switch (expression) {
+  case label_1:
+    statements_1
+    [break;]
+  case label_2:
+    statements_2
+    [break;]
+    …
+  default:
+    statements_def
+    [break;]
 }
 */
 
-/*
-if (condición_1) {
-    declaración 1;
-} else if (condición_2) {
-    declaración 2;
-} else {
-    declaración 3;
-}
-*/
-
-let edad : number = 17;
-let mayoriaEdad : number = 18;
-
-if (mayoriaEdad >= 18) {
-    console.log('Eres mayor de edad.');
-} else {
-    console.log('Eres menor de edad.');
-}
 
 
-// ***************************************
-let numero : number = 2;
+let firstName : Object = 'Luis';
 
-if (numero == 2) {
-    
-} else if (numero == 3) {
-
-} else if (numero == 4) {
-
-} else {
-
+switch (firstName) {
+    case 'Luis':
+        console.log('Hola, soy Luis');
+        break;
+    case 'Juan':
+        console.log('Hola, soy Juan');
+        break;
+    default:
+        console.log('No soy Juan y tampoco soy Luis.');
+        break;
 }
