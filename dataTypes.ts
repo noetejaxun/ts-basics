@@ -1,4 +1,3 @@
-// Void
-function advertencia(): void {
-    console.log("Esto es una advertencia");
-}
+// Null y Undefined
+let undef : number;
+console.log(typeof undef);
