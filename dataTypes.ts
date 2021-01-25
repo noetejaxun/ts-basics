@@ -1,4 +1,4 @@
-// Any
-let looselyTyped: any = {};
-looselyTyped.name;
-looselyTyped.user.name;
+// Void
+function advertencia(): void {
+    console.log("Esto es una advertencia");
+}
