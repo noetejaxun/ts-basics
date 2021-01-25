@@ -4,11 +4,8 @@ let nombres : Array<string> = [
     "Daniel",
     "Luis"
 ];
-nombres = [];
-// Ciclo do - while
-let i : number = 0;
 
-do {
-    console.log(nombres[i]);
-    i++;
-} while (i < nombres.length);
+// Método forEach
+nombres.forEach((item : string) => {
+    console.log(item);
+});
