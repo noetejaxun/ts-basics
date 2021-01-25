@@ -1,4 +1,4 @@
-// Array
-let lista : number[] = [1, 2, 3, 0xf00d];
-let _lista : Array<number> = [4, 3, 2, 1];
-// let _lista : Array<number> = [4, 3, 2, 1, "Error"];
+// Tupla
+let tupla : [number, string];
+tupla = [1, "Texto"];
+// tupla = ["Texto", 1]; // Error
