@@ -5,8 +5,10 @@ let nombres : Array<string> = [
     "Luis"
 ];
 
-// Ciclo For
-for (let i = 0; i < nombres.length; i++) {
-    const name = nombres[i];
-    console.log(name);
+// Ciclo While
+let i : number = 0;
+
+while (i < nombres.length) {
+    console.log(nombres[i]);
+    i++;
 }
