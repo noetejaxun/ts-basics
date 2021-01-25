@@ -1,6 +1,6 @@
-// Null y Undefined
-let undef : number;
-console.log(typeof undef);
+// Object
+declare function suma(obj : object | null) : void;
 
-let nu : null = null;
-console.log(typeof nu);
+suma({x: 1, y: 2});
+suma(null);
+// suma(1);
