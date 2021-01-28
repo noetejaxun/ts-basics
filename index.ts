@@ -5,7 +5,9 @@ let nombres: Array<string> = [
     "Luis"
 ];
 
-// Callback
-nombres.forEach((item: string) => {
+let miCiclo = (item : string) => {
     console.log(item);
-});
+}
+
+// Callback
+nombres.forEach(miCiclo);
