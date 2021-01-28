@@ -1,28 +1,26 @@
 import * as fetch from 'node-fetch';
 
-class Pokemon {
+class Customer {
     id: number;
 
     constructor(id : number) {
         this.id = id;
     }
 
-    getPokemon(): Promise<Object> {
-        const url = `https://pokeapi.co/api/v2/pokemon/${this.id}/`;
+    getCustomer(): Promise<Object> {
+        const url = `https://lt-func.azurewebsites.net/api/customers?code=4a5vv8taDgGNUrA4iziN25sXZwtNP4MNueAwrR7N0VJFvNMshFBHCw==`;
         return fetch(url).then((data) => data)
                          .catch(err => err);
     }
 }
 
-let pokemon = new Pokemon(1);
+let customer = new Customer(1);
+let data = customer.getCustomer();
 
-let data = pokemon.getPokemon();
-
-let printPokemon = () => {
-    data.then((it) => {
-        console.log(it);
+let printCustomer = () => {
+    data.then((it : any) => {
+        console.log(it.body);
     });
-
 }
 
-printPokemon();
+printCustomer();

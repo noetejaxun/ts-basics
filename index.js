@@ -1,21 +1,22 @@
 "use strict";
-exports.__esModule = true;
-var fetch = require("node-fetch");
-var Pokemon = /** @class */ (function () {
-    function Pokemon(id) {
+Object.defineProperty(exports, "__esModule", { value: true });
+const fetch = require("node-fetch");
+class Pokemon {
+    constructor(id) {
         this.id = id;
     }
-    Pokemon.prototype.getPokemon = function () {
-        var url = "https://pokeapi.co/api/v2/pokemon/" + this.id + "/";
-        return fetch(url).then(function (data) { return data; })["catch"](function (err) { return err; });
-    };
-    return Pokemon;
-}());
-var pokemon = new Pokemon(1);
-var data = pokemon.getPokemon();
-var printPokemon = function () {
-    data.then(function (it) {
-        console.log(it);
+    getPokemon() {
+        const url = `https://lt-func.azurewebsites.net/api/customers?code=4a5vv8taDgGNUrA4iziN25sXZwtNP4MNueAwrR7N0VJFvNMshFBHCw==`;
+        return fetch(url).then((data) => data)
+            .catch(err => err);
+    }
+}
+let pokemon = new Pokemon(1);
+let data = pokemon.getPokemon();
+let printPokemon = () => {
+    data.then((it) => {
+        console.log(it.body);
     });
 };
 printPokemon();
+//# sourceMappingURL=index.js.map
