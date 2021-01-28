@@ -1,7 +1,7 @@
 import { Persona } from './Persona';
 
-export class Cliente extends Persona {
-    idCliente: string;
+export class Empleado extends Persona {
+    idEmpleado: string;
 
     constructor(nombre: string, docPersonal: string, numCuenta: string) {
         super(nombre, docPersonal, numCuenta);
