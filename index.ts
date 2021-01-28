@@ -1,4 +1,6 @@
-import { Carro } from './Carro';
+import { Funcionario } from './Funcionario';
 
-let carro = new Carro('ABC', 'Color');
-console.log(carro);
+let func = new Funcionario('Luis', 'ltejaxun', 1);
+
+console.log(func);
+console.log(func.bienvenida());
