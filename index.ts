@@ -1,7 +1,4 @@
-import { Telefono } from './Telefono';
-// import { Producto } from './Producto';
+import { Carro } from './Carro';
 
-let telefono = new Telefono();
-telefono.cambiarNombre('XSAM');
-console.log(telefono);
-// let producto = new Producto();
+let carro = new Carro('ABC', 'Color');
+console.log(carro);
