@@ -1,13 +1,15 @@
-let nombres: Array<string> = [
-    "Hazel",
-    "Stuart",
-    "Daniel",
-    "Luis"
-];
+let logUsuarios : Array<object> = [];
 
-let miCiclo = (item : string) => {
-    console.log(item);
+let loggin = (data : object) => {
+    for (let key in data) {
+        console.log(`${key} : ${data[key]}`);
+    }
 }
 
-// Callback
-nombres.forEach(miCiclo);
+let entrada = (user : object, callback : any) => {
+    logUsuarios.push(user);
+    callback(user);
+}
+
+entrada( { nombre: 'Luis', role:'admin' }, loggin);
+entrada( { nombre: 'Hazel', role: 'admin' }, loggin);
