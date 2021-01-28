@@ -1,15 +1,15 @@
-let logUsuarios : Array<object> = [];
-
-let loggin = (data : object) => {
-    for (let key in data) {
-        console.log(`${key} : ${data[key]}`);
-    }
+const miPromesa = () => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Promesa cumplida');
+        }, Math.random() * 2000 + 1000);
+    });
 }
 
-let entrada = (user : object, callback : any) => {
-    logUsuarios.push(user);
-    callback(user);
-}
-
-entrada( { nombre: 'Luis', role:'admin' }, loggin);
-entrada( { nombre: 'Hazel', role: 'admin' }, loggin);
+miPromesa()
+    .then((success) => {
+        console.log('Success', success);
+    })
+    .catch((error) => {
+        console.log('Error:', error);
+    });
